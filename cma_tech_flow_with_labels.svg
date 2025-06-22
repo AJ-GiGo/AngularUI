@@ -1,0 +1,120 @@
+<svg width="1800" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Swimlanes -->
+  <rect x="0" y="0" width="220" height="900" fill="#f8fafc" stroke="#d1d5db"/>
+  <rect x="220" y="0" width="240" height="900" fill="#e0f2fe" stroke="#d1d5db"/>
+  <rect x="460" y="0" width="240" height="900" fill="#f8fafc" stroke="#d1d5db"/>
+  <rect x="700" y="0" width="240" height="900" fill="#e0f2fe" stroke="#d1d5db"/>
+  <rect x="940" y="0" width="240" height="900" fill="#f8fafc" stroke="#d1d5db"/>
+  <rect x="1180" y="0" width="240" height="900" fill="#e0f2fe" stroke="#d1d5db"/>
+  <rect x="1420" y="0" width="380" height="900" fill="#f8fafc" stroke="#d1d5db"/>
+  <!-- Swimlane labels -->
+  <text x="110" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Data Sources</text>
+  <text x="340" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Ingestion</text>
+  <text x="580" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Event Bus</text>
+  <text x="820" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Processing</text>
+  <text x="1060" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Validation &amp; Compliance</text>
+  <text x="1300" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">Persistence</text>
+  <text x="1610" y="40" font-size="20" font-weight="bold" text-anchor="middle" fill="#334155">UI</text>
+  <!-- Data Sources -->
+  <rect x="60" y="180" width="100" height="50" fill="#fffbe6" stroke="#64748b" rx="12"/>
+  <text x="110" y="210" font-size="16" text-anchor="middle" fill="#334155">FISS</text>
+  <rect x="60" y="270" width="100" height="50" fill="#fffbe6" stroke="#64748b" rx="12"/>
+  <text x="110" y="300" font-size="16" text-anchor="middle" fill="#334155">GOS</text>
+  <rect x="60" y="360" width="100" height="50" fill="#fffbe6" stroke="#64748b" rx="12"/>
+  <text x="110" y="390" font-size="16" text-anchor="middle" fill="#334155">IMATCH</text>
+  <!-- Ingestion Layer -->
+  <rect x="260" y="225" width="160" height="60" fill="#e0f2fe" stroke="#64748b" rx="12"/>
+  <text x="340" y="260" font-size="16" text-anchor="middle" fill="#334155">Ingestion Layer</text>
+  <text x="340" y="278" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <!-- Event Bus -->
+  <rect x="500" y="245" width="160" height="60" fill="#fff" stroke="#64748b" rx="30"/>
+  <text x="580" y="275" font-size="16" text-anchor="middle" fill="#334155">Event Bus</text>
+  <text x="580" y="293" font-size="12" text-anchor="middle" fill="#f59e42">🟧 Kafka</text>
+  <text x="580" y="308" font-size="12" text-anchor="middle" fill="#64748b">(partitioned by entity_id)</text>
+  <!-- Orchestration Engine -->
+  <rect x="740" y="180" width="160" height="60" fill="#e0f2fe" stroke="#64748b" rx="12"/>
+  <text x="820" y="215" font-size="16" text-anchor="middle" fill="#334155">Orchestration Engine</text>
+  <text x="820" y="233" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <!-- Entity-Wise Processor -->
+  <rect x="740" y="310" width="160" height="60" fill="#e0f2fe" stroke="#64748b" rx="12"/>
+  <text x="820" y="345" font-size="16" text-anchor="middle" fill="#334155">Entity-Wise Processor</text>
+  <text x="820" y="363" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <text x="820" y="378" font-size="12" text-anchor="middle" fill="#64748b">(per entity, parallel)</text>
+  <!-- Validation/Enrichment -->
+  <rect x="980" y="180" width="160" height="60" fill="#fff" stroke="#64748b" rx="12"/>
+  <text x="1060" y="215" font-size="16" text-anchor="middle" fill="#334155">Validation/Enrichment</text>
+  <text x="1060" y="233" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <text x="1060" y="248" font-size="12" text-anchor="middle" fill="#f43f5e">CASS Checkpoint</text>
+  <!-- Asset Classification -->
+  <rect x="980" y="310" width="160" height="60" fill="#fff" stroke="#64748b" rx="12"/>
+  <text x="1060" y="345" font-size="16" text-anchor="middle" fill="#334155">Asset Classification</text>
+  <text x="1060" y="363" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <text x="1060" y="378" font-size="12" text-anchor="middle" fill="#f43f5e">CASS Checkpoint</text>
+  <!-- Audit/Compliance Tracker -->
+  <rect x="980" y="440" width="160" height="60" fill="#fff" stroke="#64748b" rx="12"/>
+  <text x="1060" y="475" font-size="16" text-anchor="middle" fill="#334155">Audit/Compliance</text>
+  <text x="1060" y="493" font-size="12" text-anchor="middle" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <!-- Database -->
+  <rect x="1220" y="310" width="160" height="60" fill="#fff" stroke="#64748b" rx="20"/>
+  <text x="1300" y="345" font-size="16" text-anchor="middle" fill="#334155">Database</text>
+  <text x="1300" y="363" font-size="12" text-anchor="middle" fill="#6366f1">🟪 MS SQL</text>
+  <text x="1300" y="378" font-size="12" text-anchor="middle" fill="#64748b">(entity-tagged)</text>
+  <!-- UI Dashboard -->
+  <rect x="1500" y="310" width="220" height="60" fill="#e6ffe6" stroke="#64748b" rx="16"/>
+  <text x="1610" y="345" font-size="16" text-anchor="middle" fill="#334155">UI Dashboard</text>
+  <text x="1610" y="363" font-size="12" text-anchor="middle" fill="#22c55e">🟩 React</text>
+  <text x="1610" y="378" font-size="12" text-anchor="middle" fill="#64748b">Real-time, entity-level</text>
+  <!-- Arrows and Labels -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  <!-- Data Sources to Ingestion -->
+  <line x1="160" y1="205" x2="260" y2="255" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="210" y="230" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(-25 210 230)">Trade Data</text>
+  <line x1="160" y1="295" x2="260" y2="255" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="210" y="280" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(-10 210 280)">Trade Data</text>
+  <line x1="160" y1="385" x2="260" y2="255" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="210" y="340" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(10 210 340)">Trade Data</text>
+  <!-- Ingestion to Event Bus -->
+  <line x1="420" y1="255" x2="500" y2="275" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="460" y="265" font-size="12" fill="#64748b" text-anchor="middle">Parsed Events</text>
+  <!-- Event Bus to Orchestration -->
+  <line x1="660" y1="275" x2="740" y2="210" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="700" y="250" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(-20 700 250)">Entity Events</text>
+  <!-- Event Bus to Entity-Wise Processor (parallel) -->
+  <line x1="660" y1="275" x2="740" y2="340" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="700" y="310" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(20 700 310)">Entity Events</text>
+  <!-- Orchestration to Entity-Wise Processor -->
+  <line x1="820" y1="240" x2="820" y2="310" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="830" y="275" font-size="12" fill="#64748b" text-anchor="start">Trigger Workflow</text>
+  <!-- Entity-Wise Processor to Validation/Enrichment -->
+  <line x1="900" y1="340" x2="980" y2="210" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="940" y="270" font-size="12" fill="#64748b" text-anchor="middle" transform="rotate(-25 940 270)">Entity Data</text>
+  <!-- Validation/Enrichment to Asset Classification -->
+  <line x1="1060" y1="240" x2="1060" y2="310" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="1070" y="275" font-size="12" fill="#64748b" text-anchor="start">Validated Data</text>
+  <!-- Asset Classification to Audit/Compliance -->
+  <line x1="1060" y1="370" x2="1060" y2="440" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="1070" y="410" font-size="12" fill="#64748b" text-anchor="start">Classification Result</text>
+  <!-- Asset Classification to Database -->
+  <line x1="1140" y1="340" x2="1220" y2="340" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="1180" y="330" font-size="12" fill="#64748b" text-anchor="middle">Store Asset Data</text>
+  <!-- Audit/Compliance to Database -->
+  <line x1="1140" y1="470" x2="1300" y2="370" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="1220" y="440" font-size="12" fill="#64748b" text-anchor="middle">Audit Log</text>
+  <!-- Database to UI Dashboard -->
+  <line x1="1380" y1="340" x2="1500" y2="340" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="1440" y="330" font-size="12" fill="#64748b" text-anchor="middle">Query/Report</text>
+  <!-- Parallelism annotation -->
+  <text x="820" y="420" font-size="14" fill="#0ea5e9" font-style="italic">Parallel, decoupled entity-wise processing</text>
+  <!-- Legend -->
+  <rect x="40" y="800" width="320" height="60" fill="#fff" stroke="#d1d5db" rx="10"/>
+  <text x="60" y="825" font-size="14" fill="#334155">Legend:</text>
+  <text x="120" y="825" font-size="14" fill="#0ea5e9">🟦 Java/Spring Boot</text>
+  <text x="240" y="825" font-size="14" fill="#f59e42">🟧 Kafka</text>
+  <text x="320" y="825" font-size="14" fill="#6366f1">🟪 MS SQL</text>
+  <text x="120" y="850" font-size="14" fill="#22c55e">🟩 React</text>
+  <text x="240" y="850" font-size="14" fill="#f59e42">🟨 External Feed</text>
+</svg> 
